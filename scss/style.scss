@@ -1,0 +1,126 @@
+$bg-light: #fefae0;
+$bg-soft: #e9edc9;
+$bg-dark: #ccd5ae;
+$accent: #d4a373;
+$highlight: #faedcd;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: $bg-light;
+  color: $accent;
+  line-height: 1.7;
+}
+
+/* NAVBAR */
+.navbar {
+  background: $bg-dark;
+  padding: 1rem 0;
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .logo {
+    font-weight: 700;
+    font-size: 1.6rem;
+  }
+
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+
+    a {
+      text-decoration: none;
+      color: $accent;
+      font-weight: 500;
+    }
+  }
+}
+
+/* HERO */
+.hero {
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  background: $bg-soft;
+
+  h1 {
+    font-size: 3rem;
+    margin: 1rem 0;
+  }
+
+  p {
+    max-width: 600px;
+    margin: auto;
+  }
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 2rem;
+  padding: 0.8rem 2rem;
+  background: $accent;
+  color: $bg-light;
+  text-decoration: none;
+  border-radius: 30px;
+}
+
+/* SECTIONS */
+.section {
+  padding: 5rem 1rem;
+}
+
+.dark-section {
+  background: $bg-dark;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2.2rem;
+  margin-bottom: 2rem;
+}
+
+/* SKILLS */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+}
+
+.skill-card {
+  background: $highlight;
+  padding: 1.5rem;
+  border-radius: 16px;
+  text-align: center;
+}
+
+/* PROJECTS */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.project-card {
+  background: $bg-soft;
+  padding: 2rem;
+  border-radius: 18px;
+}
+
+/* FOOTER */
+.footer {
+  background: $accent;
+  color: $bg-light;
+  text-align: center;
+  padding: 1rem;
+}
